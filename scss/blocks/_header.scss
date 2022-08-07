@@ -1,0 +1,128 @@
+.site-header {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin: 0 auto;
+    padding: 66px 0;
+    max-width: 1300px;
+    @include space;
+}
+
+.header__nav {
+    margin: 0;
+    padding: 0;
+    width: 770px;
+    @include space;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    @include space;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav__list .nav__item .nav__item--link {
+    margin: 0;
+    padding: 0px;
+    text-decoration: none;
+    @include font(400, 16px, 130%, rgba(255, 255, 255, 0.6));
+    text-transform: capitalize;
+    transition: all 0s ease-in-out;
+}
+.mobile__item .mobile__item--link {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    text-decoration: none;
+    @include font(400, 16px, 130%,#fff);
+    text-transform: capitalize;
+    transition: all 0s ease-in-out;
+}
+.mobile__menu .mobile__item--link:hover {
+    background-color: #256D85;
+}
+.mobile__menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 50px 0 0 0;
+    padding: 0;
+    list-style: none;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+    background-color: #1d92ff;
+    display: none;
+}
+
+.nav__list .nav__item .nav__item--link:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.nav__list .nav__item .nav__item--link:active {
+    color: #fff;
+    opacity: 0.8;
+    border-bottom: 2px solid #fff;
+}
+
+.nav__link {
+    margin: 0;
+    padding: 15px 30px;
+    @include font(500, 18px, 130%, #1d92ff);
+    text-decoration: none;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+.nav__link:hover{
+    color: #8FE3CF;
+    background-color: #256D85;
+    box-shadow: 1px 2px 8px 1px #AFB4FF;
+}
+.nav__link:active{
+    color: #8FE3CF;
+    background-color: #256D85;
+    opacity: 0.8;
+    box-shadow: 0px 1px 5px 0px #AFB4FF;
+}
+.hamburger{
+    display: none;
+}
+#menu{
+    display: none;
+}
+@media screen and(max-width:1080px) {
+    .header__nav{
+        max-width: 770px;
+        justify-content: center;
+    }
+    .nav__link{
+margin-left: 80px;
+    }
+}
+@media screen and(max-width:960px) {
+    .nav__link{
+        display: none;
+    }
+    .header__nav{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    #menu{
+        display: block;
+    }
+}
