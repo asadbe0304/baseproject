@@ -97,10 +97,7 @@
     opacity: 0.8;
     box-shadow: 0px 1px 5px 0px #AFB4FF;
 }
-.hamburger{
-    display: none;
-}
-#menu{
+.menu{
     display: none;
 }
 @media screen and(max-width:1080px) {
@@ -116,13 +113,13 @@ margin-left: 80px;
     .nav__link{
         display: none;
     }
+    .header{
+        padding-top: 30px;
+    }
     .header__nav{
         display: none;
     }
-    .hamburger{
-        display: block;
-    }
-    #menu{
+    .menu{
         display: block;
     }
 }

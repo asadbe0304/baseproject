@@ -36,26 +36,9 @@
                             <a class="nav__item--link" href="#link">CTA</a>
                         </li>
                     </ol>
-                    <ol class="mobile__menu">
-                        <li class="mobile__item">
-                            <a class="mobile__item--link" href="#link">Home</a>
-                        </li>
-                        <li class="mobile__item">
-                            <a class="mobile__item--link" href="#link">Features</a>
-                        </li>
-                        <li class="mobile__item">
-                            <a class="mobile__item--link" href="#link">Testimonial</a>
-                        </li>
-                        <li class="mobile__item">
-                            <a class="mobile__item--link" href="#link">Pricing</a>
-                        </li>
-                        <li class="mobile__item">
-                            <a class="mobile__item--link" href="#link">CTA</a>
-                        </li>
-                    </ol>
                     <a class="nav__link" href="#link">Try Demo</a>
                 </nav>
-                <img class="hamburger" src="./images/menu.png" width="32" height="32" alt="hamburger__menu icon">
+                <span class="menu">&#9776; open</span>
             </div>
         </div>
     </header>
@@ -103,15 +86,14 @@
     </footer>
     <!-- Site Footer End  -->
     <script>
-        function myFunction() {
-            var x = document.getElementsById("#menu");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
         }
-    </script>
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
 </body>
 
 </html>
